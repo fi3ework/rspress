@@ -57,7 +57,7 @@ export class LocalProvider implements Provider {
     const searchIndexLang = lang ? `.${lang}` : '';
 
     const result = await fetch(
-      `${removeTrailingSlash(__webpack_public_path__)}/static/${SEARCH_INDEX_NAME}${searchIndexVersion}${searchIndexLang}.${searchIndexHash[searchIndexGroupID]}.json`,
+      `${removeTrailingSlash(__non_webpack_public_path__)}/static/${SEARCH_INDEX_NAME}${searchIndexVersion}${searchIndexLang}.${searchIndexHash[searchIndexGroupID]}.json`,
     );
     return result.json();
   }

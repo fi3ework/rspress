@@ -1,6 +1,7 @@
+import path from 'node:path';
 import type { Config } from 'tailwindcss';
 
-export const tailwindConfig = {
+const tailwindConfig = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
@@ -73,3 +74,6 @@ export const tailwindConfig = {
     },
   },
 } satisfies Config;
+
+export { tailwindConfig };
+export default tailwindConfig;

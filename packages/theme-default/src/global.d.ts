@@ -50,6 +50,6 @@ declare module 'virtual-search-index-hash' {
   export default hash;
 }
 
-declare const __webpack_public_path__: string;
+declare const __non_webpack_public_path__: string;
 
 declare module '@theme';
